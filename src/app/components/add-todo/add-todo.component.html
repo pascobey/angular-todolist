@@ -1,0 +1,8 @@
+<form (ngSubmit)="onSubmit()">
+    <div class="input-group">
+        <input type="text" name="title" [(ngModel)]="title" placeholder="Add Todo..." class="form-control">
+        <div class="input-group-append">
+            <input type="submit" value="Submit" class="btn btn-secondary">
+        </div>
+    </div>
+</form>
