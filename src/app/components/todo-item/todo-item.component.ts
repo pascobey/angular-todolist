@@ -18,10 +18,17 @@ export class TodoItemComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  checkboxed() {
+    if (this.todo.completed) {
+      return 'checked'
+    } else {
+      return ''
+    }
+  }
+
   setClasses() {
     let classes = {
-      'bg-danger': !this.todo.completed,
-      'bg-success': this.todo.completed
+      'line-through': this.todo.completed
     }
     return classes;
   }
